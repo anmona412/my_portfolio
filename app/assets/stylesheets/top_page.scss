@@ -9,6 +9,11 @@
 }
 
 .main {
+  background-image: url(/assets/portfolio_top.jpg);
+  background-size: cover;
   background-color: rgb(148, 193, 212);
   width: calc(100vw - 300px);
+}
+
+.main_top {
 }

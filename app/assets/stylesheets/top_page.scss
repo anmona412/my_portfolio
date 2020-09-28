@@ -13,7 +13,28 @@
   background-size: cover;
   background-color: rgb(148, 193, 212);
   width: calc(100vw - 300px);
+  display: flex;
 }
 
-.main_top {
+.main_left {
+  width: calc(100vw - 700px);
+  height: 50vh;
+  background-color: blueviolet;
+  opacity: 0.5;
+}
+
+.main_right {
+  width: 400px;
+}
+
+.my_twitter {
+  height: 50vh;
+  background-color: brown;
+  opacity: 0.5;
+}
+
+.update {
+  height: 50vh;
+  background-color: chartreuse;
+  opacity: 0.5;
 }

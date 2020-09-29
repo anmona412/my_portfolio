@@ -27,8 +27,12 @@
 
 .my_twitter {
   height: 50vh;
-  background-color: brown;
-  opacity: 0.5;
+  padding: 25px;
+}
+
+.twitter_box {
+  height: calc(50vh - 50px);
+  overflow: scroll;
 }
 
 .update {

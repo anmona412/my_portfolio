@@ -6,6 +6,9 @@
   <div class = "main top_page">
     <div class = "main_left">
       <p>Welcome to my portfolio!!</p>
+      <% if user_signed_in? %>
+        編集者ログイン中
+      <% end %>
       <%= link_to '　', user_session_path, class:"admin_log"%>
     </div>
     <div class = "main_right">
@@ -16,7 +19,29 @@
       </div>
 
       <div class = "update">
-        更新履歴
+        <div class = "update_wrap">
+            <p>
+              更新履歴
+            </p>
+          <div class = "post_box">
+            <% @post.each do |post| %>
+              <div class = "post_colum">
+                <div class = "post_info">
+                  <%= post.new_post %> <br>
+                </div>
+                <div class = "post_date">
+                  更新日<%= post.created_at %> 
+                </div>
+              </div>
+            <% end %>
+            <% if current_user.admin == true %>
+              <%= form_with model:@post,url: new_posts_path, local: true do |f| %>
+                <%= f.text_field :new_post, class:"クラス", placeholder:"更新内容" %>
+                <%= f.submit "更新", class:"クラス"%>
+              <% end %>
+          </div>
+        <% end %>
+        </div>
       </div>
     </div>
   </div>

@@ -37,8 +37,36 @@
 
 .update {
   height: 50vh;
-  background-color: chartreuse;
-  opacity: 0.5;
+  padding: 25px;
+}
+
+.update_wrap {
+  background-color: rgba(255, 248, 220, 0.507);
+  height: 100%;
+  border-radius: 3px;
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.post_box {
+  height: 90%;
+  overflow: scroll;
+}
+
+.post_colum {
+  background-color: white;
+  margin: 5px;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+
+.post_info {
+}
+
+.post_date {
+  font-size: 5px;
 }
 
 .top_page {
@@ -47,7 +75,6 @@
 }
 
 .admin_log {
-  background-color: dimgray;
   width: 10px;
   height: 10px;
 }

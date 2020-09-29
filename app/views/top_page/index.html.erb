@@ -20,6 +20,19 @@
 
       <div class = "update">
         更新履歴
+        <% @post.each do |post| %>
+        <div>
+          更新内容<%= post.new_post %> <br>
+          更新日<%= post.created_at%>
+        </div>
+        <% end %>
+
+        <% if user_signed_in? %>
+          <%= form_with model:@post,url: new_posts_path, local: true do |f| %>
+            <%= f.text_field :new_post, class:"クラス", placeholder:"更新内容" %>
+            <%= f.submit "更新", class:"クラス"%>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>

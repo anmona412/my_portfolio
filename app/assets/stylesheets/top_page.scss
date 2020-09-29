@@ -9,8 +9,6 @@
 }
 
 .main {
-  background-image: url(/assets/portfolio_top.jpg);
-  background-size: cover;
   background-color: rgb(148, 193, 212);
   width: calc(100vw - 300px);
   display: flex;
@@ -37,4 +35,9 @@
   height: 50vh;
   background-color: chartreuse;
   opacity: 0.5;
+}
+
+.top_page {
+  background-image: url(/assets/portfolio_top.jpg);
+  background-size: cover;
 }

@@ -1,0 +1,32 @@
+.my_work {
+  background-image: url(/assets/my_work.jpg);
+  background-size: cover;
+}
+
+.work_wrapper {
+  background-color: crimson;
+  opacity: 0.5;
+  width: calc(100vw - 500px);
+  height: 100vh;
+  margin: 0 100px 0 100px;
+  overflow: scroll;
+}
+
+.work_colum {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+  opacity: 0.5;
+  height: 300px;
+  padding-top: 50px;
+}
+
+.work_pic {
+  background-color: darkgreen;
+  width: 300px;
+}
+
+.work_exp {
+  background-color: darksalmon;
+  width: calc(100% - 400px);
+}

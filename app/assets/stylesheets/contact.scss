@@ -1,3 +1,20 @@
-// Place all the styles related to the contact controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.contact {
+  background-image: url(/assets/contact.jpg);
+  background-size: cover;
+}
+
+.contact_top {
+  background-color: darkviolet;
+  opacity: 0.5;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact_link {
+  background-color: deepskyblue;
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+}

@@ -17,8 +17,13 @@
 .main_left {
   width: calc(100vw - 700px);
   height: 50vh;
+  display: flex;
+  justify-content: space-around;
   background-color: blueviolet;
   opacity: 0.5;
+}
+
+.welcome {
 }
 
 .main_right {
@@ -41,7 +46,6 @@
 }
 
 .update_wrap {
-  background-color: rgba(255, 248, 220, 0.507);
   height: 100%;
   border-radius: 3px;
   p {

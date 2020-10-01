@@ -7,11 +7,12 @@
     <div class = "main_left">
       <div class = "welcome">
       </div>
-      <p>Welcome to my portfolio!!</p>
+        <p class = "top_comment">
+          Welcome to my portfolio!!
+        </p>
       <% if user_signed_in? %>
         編集者ログイン中
       <% end %>
-      <%= link_to '　', user_session_path, class:"admin_log"%>
 
     </div>
     <div class = "main_right">

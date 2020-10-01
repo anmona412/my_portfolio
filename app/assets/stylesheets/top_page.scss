@@ -9,7 +9,6 @@
 }
 
 .main {
-  background-color: rgb(148, 193, 212);
   width: calc(100vw - 300px);
   display: flex;
 }
@@ -23,7 +22,10 @@
 
 .top_comment {
   margin-top: 100px;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  font-family: fantasy;
 }
 
 .welcome {

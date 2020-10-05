@@ -5,37 +5,17 @@
 
   <div class = "main my_work">
     <div class = "work_wrapper">
-
-      <div class = "work_colum" >
-        <div class = "work_pic">
+      <% @mywork.each do |f| %>
+        <div class = "work_colum" >
+          <%= image_tag f.pic, class:"work_pic" %>
+          <div class = "work_exp">
+          サイト名:<%= f.site_name%><br>
+          URL <%= f.url%><br>
+          github <%= f.github%><br>
+          概要 <%= f.info%><br>
+          </div>
         </div>
-        <div class = "work_exp">
-          サイト名<br>
-          URL <br>
-          github <br>
-          概要 <br>
-        </div>
-      </div>
-
-      <div class = "work_colum">
-        <div class = "work_pic">
-        </div>
-        <div class = "work_exp">
-        </div>
-      </div>
-
-      <div class = "work_colum">
-        <div class = "work_pic">
-        </div>
-        <div class = "work_exp">
-        </div>
-      </div>
-      <div class = "work_colum">
-        <div class = "work_pic">
-        </div>
-        <div class = "work_exp">
-        </div>
-      </div>     
+      <% end %>
     </div>
   </div>
 </div>

@@ -27,12 +27,20 @@ MyWork.first_or_create(
     },
     { 
       id: 2,
-      pic:'furima_pic.png',
+      pic:'furima_pic.jpg',
       site_name:'furima',
       url:'https://furima-28267.herokuapp.com/',
       github:'https://github.com/anmona412/furima_28267.git',
       info:'TechCamp卒業課題で制作したフリマサイトのクローンサイト。  
       Basic認証（User:admin, Pass: silentdart ）',
+    } ,
+    { 
+      id: 3,
+      pic:'myportfolio.jpg',
+      site_name:'MyPortfolio',
+      url:'XXX',
+      github:'https://github.com/anmona412/my_portfolio.git',
+      info:'自己紹介用ポートフォリオサイト',
     } 
   ]
 )

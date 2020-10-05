@@ -1,0 +1,2 @@
+class MyWork < ApplicationRecord
+end
